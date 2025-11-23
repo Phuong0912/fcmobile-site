@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FC Mobile — fcmobile.garenavn.com</title>
+  <meta name="description" content="FC Mobile — thông tin, tin tức và tải xuống liên quan đến FC Mobile" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <meta name="theme-color" content="#0f172a" />
+  <style>
+    :root{--bg:#0f172a;--card:#0b1220;--muted:#94a3b8;--accent:#06b6d4}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,var(--bg),#071022);color:#e6eef6;min-height:100vh;display:flex;flex-direction:column}
+    .container{max-width:1000px;padding:28px;margin:0 auto;width:100%}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{font-size:20px;margin:0}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    nav a{color:var(--muted);text-decoration:none;margin-left:12px}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;margin-top:28px}
+    .card{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px;box-shadow:0 4px 24px rgba(2,6,23,0.6)}
+    .cta{display:inline-block;padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#001; font-weight:700;text-decoration:none}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:14px}
+    .feature{padding:14px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01))}
+    footer{margin-top:auto;padding:22px 0;color:var(--muted);text-align:center}
+
+    @media(min-width:820px){.hero{grid-template-columns:1fr 360px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">FC</div>
+        <div>
+          <h1>FC Mobile</h1>
+          <p class="lead">Tin tức · Tải về · Hướng dẫn — fcmobile.garenavn.com</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#features">Tính năng</a>
+        <a href="#download">Tải xuống</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="card">
+        <h2>Chào mừng đến với FC Mobile</h2>
+        <p class="lead">Trang web mã nguồn mở, nhẹ, dễ host. Dùng cho tin tức, hướng dẫn, và phân phối tệp cài đặt an toàn.</p>
+        <p style="margin-top:12px">Bạn có thể dùng mã nguồn này để làm landing page, documentation hoặc micro-site cho ứng dụng di động.</p>
+        <p style="margin-top:14px">
+          <a class="cta" href="#download">Tải xuống</a>
+          <a style="margin-left:12px;color:var(--muted);text-decoration:none" href="#readme">Hướng dẫn triển khai</a>
+        </p>
+      </section>
+
+      <aside class="card">
+        <h3>Phiên bản nhanh</h3>
+        <p class="lead">Tốc độ: nhẹ — Bảo mật: phụ thuộc host — Giấy phép: MIT</p>
+        <div style="margin-top:12px">
+          <strong>Chỉ mục:</strong>
+          <ul style="color:var(--muted);padding-left:18px">
+            <li>Trang chủ</li>
+            <li>Tính năng</li>
+            <li>Tải xuống</li>
+            <li>Liên hệ</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section id="features" class="card" style="grid-column:1/-1;margin-top:12px">
+        <h3>Tính năng</h3>
+        <div class="grid" style="margin-top:10px">
+          <div class="feature"><h4>Open-source</h4><p style="color:var(--muted)">MIT license, dễ chỉnh sửa.</p></div>
+          <div class="feature"><h4>Static + Fast</h4><p style="color:var(--muted)">Tương thích GitHub Pages / Netlify.</p></div>
+          <div class="feature"><h4>Responsive</h4><p style="color:var(--muted)">Tối ưu di động.</p></div>
+          <div class="feature"><h4>SEO cơ bản</h4><p style="color:var(--muted)">Thân thiện Google.</p></div>
+        </div>
+
+        <h3 style="margin-top:14px">Tải xuống — Demo</h3>
+        <p style="color:var(--muted)">Liên kết tải APK / iOS đặt tại đây.</p>
+        <p><a class="cta" id="download" href="#">Tải xuống demo</a></p>
+      </section>
+
+      <section id="contact" class="card" style="grid-column:1/-1;margin-top:12px">
+        <h3>Liên hệ</h3>
+        <p style="color:var(--muted)">Email: <a href="mailto:hello@fcmobile.garenavn.com" style="color:var(--accent)">hello@fcmobile.garenavn.com</a></p>
+      </section>
+
+      <section id="readme" class="card" style="grid-column:1/-1;margin-top:12px">
+        <h3>README — Triển khai nhanh</h3>
+        <ol style="color:var(--muted)">
+          <li>Tạo repo GitHub và upload các file.</li>
+          <li>Bật GitHub Pages.</li>
+          <li>Cấu hình DNS: CNAME fcmobile → username.github.io.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <div style="max-width:900px;margin:0 auto;opacity:0.9">© FC Mobile — MIT License.</div>
+    </footer>
+  </div>
+</body>
+</html>
